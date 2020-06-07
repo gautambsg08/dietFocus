@@ -5,7 +5,7 @@ pipeline {
     {
       steps{
       
-      bat "mvn clean"
+      bat "mvn clean --file *.pom"
       echo "build has been done"
       }
     }
