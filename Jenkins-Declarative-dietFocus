@@ -1,7 +1,6 @@
 pipeline {
    agent any
-   environment {
-      PATH = "C:/Users/ganan/scoop/apps/maven/current/bin:$PATH"
+   
    }
    stages {
     stage("Maven Build") {
