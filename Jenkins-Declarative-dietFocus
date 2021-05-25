@@ -1,4 +1,4 @@
-currentBuild.displayName = "demo-focus-#"+ displayName.number
+currentBuild.displayName = "demo-focus-#"+ currentBuild.number
 pipeline {
    agent any
    tools {
