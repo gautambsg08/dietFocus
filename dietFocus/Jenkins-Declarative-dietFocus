@@ -1,10 +1,13 @@
+currentBuild.displayName = "demo-focus-#"+currentBuild.number
 pipeline {
    agent any
-   
+   tools {
+        maven 'maven3.6.3'
+    }
    stages {
     stage("Maven Build") {
       steps {
-        sh "mvn clean install"
+        bat "mvn package"
       }
     }
    }
